@@ -14,7 +14,7 @@
                     <GradientStop Color="white" Offset="0.5" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <Label FontSize="16" FontWeight="Bold">Nombre</Label>
+            <Label>Nombre</Label>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Height="80">
@@ -24,7 +24,7 @@
                     <GradientStop Color="white" Offset="0.5" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <Label FontSize="16" FontWeight="Bold">Direccion</Label>
+            <Label>Direccion</Label>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Height="80">
@@ -34,12 +34,24 @@
                     <GradientStop Color="white" Offset="0.5" />
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <Label FontSize="16" FontWeight="Bold">Correo electrónico</Label>
+            <Label>Correo electrónico</Label>
             <TextBox Width="600" HorizontalAlignment="Left" Margin="5"></TextBox>
         </StackPanel>
         <WrapPanel HorizontalAlignment="Right">
-            <Button Margin="5" Width="100">Aceptar</Button>
-            <Button Margin="5" Width="100">Cancelar</Button>
+            <Button>Aceptar</Button>
+            <Button>Cancelar</Button>
         </WrapPanel>
     </StackPanel>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Width" Value="100" />
+        </Style>
+    </Window.Resources>
 </Window>
